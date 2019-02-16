@@ -2,7 +2,7 @@ variable "client_id" {}
 variable "client_secret" {}
 
 variable "agent_count" {
-    default = 6
+    default = 4
 }
 
 variable "ssh_public_key" {
@@ -17,12 +17,16 @@ variable cluster_name {
     default = "aks-1"
 }
 
+variable kubernetes_version {
+    default = "1.11.7"
+}
+
 variable resource_group_name {
-    default = "azure-aks-1"
+    default = "aksrg"
 }
 
 variable location {
-    default = "Central US"
+    default = "East US"
 }
 
 variable log_analytics_workspace_name {
